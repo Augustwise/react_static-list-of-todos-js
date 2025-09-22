@@ -5,7 +5,9 @@ import '../../App.scss';
 export const TodoList = ({ todos }) => (
   <>
     {todos.map(todo => (
-      <TodoInfo todo={todo} key={todo.id} />
+      <section className="TodoList">
+        <TodoInfo todo={todo} key={todo.id} />
+      </section>
     ))}
   </>
 );
